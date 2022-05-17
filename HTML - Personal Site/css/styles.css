@@ -1,0 +1,39 @@
+body {
+    background-color: #fbffdf;
+}
+
+hr {
+    /* background-color: #A2B38B; */
+    /* Set background color of <hr> box, not the border */
+    
+    border-style: dotted none none;
+    border-color: #A2B38B; /* Set border color */
+    border-width: 5px; /* Set border width --> Make the border bigger & bolder */
+
+    /* 
+        border-width: 5px 0 0 0; 
+        --> Still right if not set style for each border side
+    */
+
+    /* 
+        With 3 values are specified, 1 for top, 2 for right & left, 3 for bottom.
+        With 4 values are specified, the styles apply to:
+            1. Top border
+            2. Right
+            3. Bottom
+            4. Left
+        Search border-style MDN docs for more details
+    */
+    
+    width: 10%;
+}
+
+h1 {
+    color: #66bfbf;
+}
+h2 {
+    color: #66bfbf;
+}
+h3 {
+    color: #FF8080;
+}

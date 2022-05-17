@@ -1,0 +1,50 @@
+body {
+    background-color: #F7E2E2;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.top-container {
+    background-color: #FFF6EA;
+    width: 200em;
+
+    /* Challenge in Video 44:
+        border: solid;
+        border-width: 10px;
+        padding: 20px;
+    */
+
+}
+
+.middle-container {
+    background-color: #B4FF9F;
+    height : 200px;
+    width : 200px;
+
+    /* Challenge in Video 44:
+        border: solid;
+        border-width: 20px;
+        margin-left: 260px;
+    */
+}
+
+.bottom-container {
+    background-color: #F9FFA4;
+    height : 200px;
+    width : 200px;
+
+    /* Challenge in Video 44:
+        border: solid;
+        border-width: 10px;
+        margin-left: 500px;
+    */
+
+}
+
+.span-pro {
+    text-decoration: underline;
+}
+

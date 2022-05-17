@@ -1,0 +1,29 @@
+/********************************TAG SELECTORS********************************/h1 {
+    color: red;
+}
+
+/* Apply hover pseudo class */
+img:hover {
+    background-color: gold;
+}
+
+
+/********************************CLASS SELECTORS********************************/
+
+.bacon {
+    background-color: green;
+}
+
+.hotdog {
+    background-color: red;
+}
+
+/* 2nd class for hotdog image*/
+.circular {
+    border-radius: 100%;
+}
+
+/********************************ID SELECTORS********************************/
+#heading {
+    color: violet;
+}
