@@ -1,7 +1,7 @@
 body {
     background-color: #F7E2E2;
     margin: 0;
-
+    text-align: center;
 }
 
 h1 {
@@ -10,13 +10,13 @@ h1 {
 
 .top-container {
     background-color: #FFF6EA;
-    width: 200em;
-
     /* Challenge in Video 44:
         border: solid;
         border-width: 10px;
         padding: 20px;
     */
+    position: relative;
+    padding-top: 100px;
 
 }
 
@@ -42,13 +42,20 @@ h1 {
         border-width: 10px;
         margin-left: 500px;
     */
-
 }
 
 .span-pro {
     text-decoration: underline;
 }
 
+.top-cloud {
+    position : absolute; /* absolute compared with parent block which is top-container */
+    right: 300px;
+    top: 50px;
+}
+
 .bottom-cloud {
-    position: absolute;
+    position: absolute; /* absolute compared with parent block which is top-container */
+    left: 300px;
+    bottom: 300px;
 }
