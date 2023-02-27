@@ -2,10 +2,20 @@ body {
     background-color: #F7E2E2;
     margin: 0;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 h1 {
     margin-top: 0;
+    font-family: 'Gloock', serif;
+}
+
+h2 {
+    font-family: 'Gloock', serif;
+}
+
+h3 {
+    font-family: 'Gloock', serif;
 }
 
 .top-container {
@@ -58,4 +68,9 @@ h1 {
     position: absolute; /* absolute compared with parent block which is top-container */
     left: 300px;
     bottom: 300px;
+}
+
+#name {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
 }
