@@ -10,18 +10,21 @@ h1 {
     margin: 50px auto 0 auto;
     font-family: 'Gloock', serif;
     font-size: 5.625em;
-    line-height: 2;
+    color: #66BFBF;
+    /* For Lesson 56 - Challeng 3: line-height: 2; */
 }
 
 h2 {
     font-family: 'Gloock', serif;
     font-size: 2.5rem;
     font-weight: normal;
+    color: #66BFBF;
+
 }
 
-h1, h2 {
+/* h1, h2 {
     color: #66BFBF;
-}
+} */
 
 h3 {
     font-family: 'Gloock', serif;
