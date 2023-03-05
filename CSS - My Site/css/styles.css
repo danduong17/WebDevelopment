@@ -3,15 +3,19 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    font-size: 2em;
+
 }
 
 h1 {
-    margin-top: 0;
+    margin: 50px auto 0 auto;
     font-family: 'Gloock', serif;
+    font-size: 5.625em;
 }
 
 h2 {
     font-family: 'Gloock', serif;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -92,5 +96,6 @@ h3 {
 
 #name {
     font-family: 'Sacramento', cursive;
-    font-size: 40px;
+    font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
 }
+
