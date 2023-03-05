@@ -1,25 +1,24 @@
 body {
-    background-color: #fff0f0;
-    margin: 0;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    /* For Lesson 53 - Font sizing: font-size: 2em; */
+  background-color: #fff0f0;
+  margin: 0;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  /* For Lesson 53 - Font sizing: font-size: 2em; */
 }
 
 h1 {
-    margin: 50px auto 0 auto;
-    font-family: 'Gloock', serif;
-    font-size: 5.625em;
-    color: #66BFBF;
-    /* For Lesson 56 - Challeng 3: line-height: 2; */
+  margin: 50px auto 0 auto;
+  font-family: "Gloock", serif;
+  font-size: 5.625em;
+  color: #66bfbf;
+  /* For Lesson 56 - Challeng 3: line-height: 2; */
 }
 
 h2 {
-    font-family: 'Gloock', serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: #66BFBF;
-
+  font-family: "Gloock", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66bfbf;
 }
 
 /* h1, h2 {
@@ -27,34 +26,38 @@ h2 {
 } */
 
 h3 {
-    font-family: 'Gloock', serif;
+  font-family: "Gloock", serif;
 }
 
-h3, a {
-    color: #11999E;
+h3,
+a {
+  color: #11999e;
+}
+
+a {
+    text-decoration: none; /* remove underline for hyperlinks */
+    padding-left: 2rem;
 }
 
 .top-container {
-    background-color: #FFF6EA;
-    /* Challenge in Video 44:
+  background-color: #fff6ea;
+  /* Challenge in Video 44:
         border: solid;
         border-width: 10px;
         padding: 20px;
     */
-    position: relative;
-    padding-top: 100px;
-
+  position: relative;
+  padding-top: 100px;
 }
 
 .middle-container {
-    
-    /* Challenge in Video:
+  /* Challenge in Video:
         background-color: #B4FF9F;
         height : 200px;
         width : 200px; 
     */
 
-    /* Challenge in Video 44:
+  /* Challenge in Video 44:
         border: solid;
         border-width: 20px;
         margin-left: 260px;
@@ -68,42 +71,45 @@ h3, a {
 */
 
 .bottom-container {
-
-    /* Challenge in Video:
+  /* Challenge in Video:
         background-color: #F9FFA4;
         height : 200px;
         width : 200px; 
     */
 
-    /* Challenge in Video 44:
+  /* Challenge in Video 44:
         border: solid;
         border-width: 10px;
         margin-left: 500px;
     */
+    
+    background-color: #66bfbf;
+    margin-top: 100px;
+    padding: 40px 0;
+
 }
 
 .profile-img {
-    width : 200px;
+  width: 200px;
 }
 
 .skill-row {
-    width : 50%;
-    margin: 100px auto;
-    text-align: left; /* This will override text-aligned center in body */
-    line-height: 2;
-
+  width: 50%;
+  margin: 100px auto;
+  text-align: left; /* This will override text-aligned center in body */
+  line-height: 2;
 }
 
 .research-img {
-    width : 25%;
-    float: left; /* make text-wrap around img */
-    margin-right: 30px;
+  width: 25%;
+  float: left; /* make text-wrap around img */
+  margin-right: 30px;
 }
 
 .singing-img {
-    width : 25%;
-    float: right; /* make text-wrap around img */
-    margin-left: 30px;
+  width: 25%;
+  float: right; /* make text-wrap around img */
+  margin-left: 30px;
 }
 
 /* For Lesson 58 - Float & Clear: clear example
@@ -120,26 +126,62 @@ h3, a {
 } */
 
 .span-pro {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .top-cloud {
-    position : absolute; /* absolute compared with parent block which is top-container */
-    right: 300px;
-    top: 50px;
+  position: absolute; /* absolute compared with parent block which is top-container */
+  right: 300px;
+  top: 50px;
 }
 
 .bottom-cloud {
-    position: absolute; /* absolute compared with parent block which is top-container */
-    left: 300px;
-    bottom: 300px;
+  position: absolute; /* absolute compared with parent block which is top-container */
+  left: 300px;
+  bottom: 300px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.footer-link {
 }
 
 #name {
-    font-family: 'Sacramento', cursive;
-    font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
+}
+
+#contact-text {
+    margin-bottom: 70px;
 }
 
 #footer-copyright {
-    font-size: 1rem;
+  font-size: 1rem;
+  color: #eaf6f6;
+  margin-top: 40px;
 }
