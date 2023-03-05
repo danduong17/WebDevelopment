@@ -36,7 +36,7 @@ a {
 
 a {
     text-decoration: none; /* remove underline for hyperlinks */
-    padding-left: 2rem;
+    padding-left: 2rem; /* add space between anchor tags to make it look better, not tighter */
 }
 
 .top-container {
