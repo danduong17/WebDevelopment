@@ -3,7 +3,7 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    font-size: 2em;
+    /* For Lesson 53 - Font sizing: font-size: 2em; */
 }
 
 h1 {
@@ -67,14 +67,6 @@ h3, a {
 } 
 */
 
-.profile-img {
-    width : 200px;
-}
-
-.skill-icons {
-    width : 80px;
-}
-
 .bottom-container {
 
     /* Challenge in Video:
@@ -89,6 +81,43 @@ h3, a {
         margin-left: 500px;
     */
 }
+
+.profile-img {
+    width : 200px;
+}
+
+.skill-row {
+    width : 50%;
+    margin: 100px auto;
+    text-align: left; /* This will override text-aligned center in body */
+    line-height: 2;
+
+}
+
+.research-img {
+    width : 25%;
+    float: left; /* make text-wrap around img */
+    margin-right: 30px;
+}
+
+.singing-img {
+    width : 25%;
+    float: right; /* make text-wrap around img */
+    margin-left: 30px;
+}
+
+/* For Lesson 58 - Float & Clear: clear example
+    .research-skill-description {
+    make sure left margin of the skill description is clear & wrapped around anything, 
+    then basically prevents it from carrying out the default
+    clear: left; 
+} 
+
+    .singing-skill-description{
+    make sure right margin of the skill description is clear & wrapped around anything, 
+    then basically prevents it from carrying out the default
+    clear: right; 
+} */
 
 .span-pro {
     text-decoration: underline;
