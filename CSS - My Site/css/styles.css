@@ -106,3 +106,6 @@ h3, a {
     font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
 }
 
+#footer-copyright {
+    font-size: 1rem;
+}
