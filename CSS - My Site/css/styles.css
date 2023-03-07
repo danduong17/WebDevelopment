@@ -4,6 +4,8 @@ body {
   text-align: center;
   font-family: "Playfair Display", serif;
   /* For Lesson 53 - Font sizing: font-size: 2em; */
+  /* If have white background, should use this font color as it's more designed but still highly readable
+      color: #40514E; */
 }
 
 h1 {
@@ -19,6 +21,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: normal;
   color: #66bfbf;
+  padding-bottom: 10px;
 }
 
 /* h1, h2 {
@@ -27,16 +30,35 @@ h2 {
 
 h3 {
   font-family: "Gloock", serif;
-}
-
-h3,
-a {
   color: #11999e;
 }
 
+p {
+  line-height: 2;
+}
+
 a {
-    text-decoration: none; /* remove underline for hyperlinks */
-    padding-left: 2rem; /* add space between anchor tags to make it look better, not tighter */
+  color: #11999e;
+  font-family: "Gloock", serif;
+  text-decoration: none; /* remove underline for hyperlinks */
+  /* add space between anchor tags to make it look better, not tighter
+  could use padding or margin:
+    padding-left: 2rem; 
+  */
+  margin: 10px 20px;
+}
+
+/* Make the links in footer look more clickable when rollover it */
+a:hover {
+  color: #eaf6f6;
+}
+
+hr {
+  /* If write only border --> it will have 2 line after styling
+  To avoid this, we only style border-top or we could use that way above but set border-bottom to none */
+  border-top: dotted rgb(254, 211, 211) 5px; /* could follow any orders (e.g: 5px dotted #color) */ 
+  width: 2.5rem; /* use dynamic size here so that it can scale when website scales */
+  margin: 6.25rem auto;
 }
 
 .top-container {
@@ -55,13 +77,15 @@ a {
         background-color: #B4FF9F;
         height : 200px;
         width : 200px; 
-    */
+  */
 
   /* Challenge in Video 44:
         border: solid;
         border-width: 20px;
         margin-left: 260px;
-    */
+  */
+
+  margin: 100px 0;
 }
 
 /* Should not use this to style img in middle container as it's complicated to expand later or could cause errors
@@ -82,22 +106,39 @@ a {
         border-width: 10px;
         margin-left: 500px;
     */
-    
-    background-color: #66bfbf;
-    margin-top: 100px;
-    padding: 40px 0;
 
+  background-color: #66bfbf;
+  margin-top: 100px;
+  padding: 40px 0 20px;
+}
+
+.top-cloud {
+  position: absolute; /* absolute compared with parent block which is top-container */
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute; /* absolute compared with parent block which is top-container */
+  left: 250px;
+  bottom: 300px;
 }
 
 .profile-img {
   width: 200px;
 }
 
+.profile-intro {
+  width: 30%;
+  margin: auto;
+}
+
 .skill-row {
   width: 50%;
   margin: 100px auto;
   text-align: left; /* This will override text-aligned center in body */
-  line-height: 2;
+  /* don't need anymore as styling paragraph will affect all paragraphs on the page
+      line-height: 2; */
 }
 
 .research-img {
@@ -129,18 +170,6 @@ a {
   text-decoration: underline;
 }
 
-.top-cloud {
-  position: absolute; /* absolute compared with parent block which is top-container */
-  right: 300px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute; /* absolute compared with parent block which is top-container */
-  left: 300px;
-  bottom: 300px;
-}
-
 .btn {
   background: #11cdd4;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -150,7 +179,7 @@ a {
   background-image: linear-gradient(to bottom, #11cdd4, #11999e);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
+  border-radius: 8px;
   font-family: Georgia;
   color: #ffffff;
   font-size: 20px;
@@ -168,20 +197,21 @@ a {
   text-decoration: none;
 }
 
-.footer-link {
-}
-
 #name {
   font-family: "Sacramento", cursive;
   font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
 }
 
-#contact-text {
-    margin-bottom: 70px;
+#contact-message {
+  width: 30%;
+  margin: 50px auto 70px; /* Angela: top = 40, bot = 60 */
 }
 
 #footer-copyright {
-  font-size: 1rem;
+  font-size: 0.75rem;
   color: #eaf6f6;
-  margin-top: 40px;
+  /* could use margin 
+    margin-top: 40px;
+  */
+  padding: 20px 0;
 }
