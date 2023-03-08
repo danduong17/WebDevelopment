@@ -1,50 +1,217 @@
 body {
-    background-color: #F7E2E2;
-    margin: 0;
+  background-color: #fff0f0;
+  margin: 0;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  /* For Lesson 53 - Font sizing: font-size: 2em; */
+  /* If have white background, should use this font color as it's more designed but still highly readable
+      color: #40514E; */
 }
 
 h1 {
-    margin-top: 0;
+  margin: 50px auto 0 auto;
+  font-family: "Gloock", serif;
+  font-size: 5.625em;
+  color: #66bfbf;
+  /* For Lesson 56 - Challeng 3: line-height: 2; */
+}
+
+h2 {
+  font-family: "Gloock", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #66bfbf;
+  padding-bottom: 10px;
+}
+
+/* h1, h2 {
+    color: #66BFBF;
+} */
+
+h3 {
+  font-family: "Gloock", serif;
+  color: #11999e;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+  color: #11999e;
+  font-family: "Gloock", serif;
+  text-decoration: none; /* remove underline for hyperlinks */
+  /* add space between anchor tags to make it look better, not tighter
+  could use padding or margin:
+    padding-left: 2rem; 
+  */
+  margin: 10px 20px;
+}
+
+/* Make the links in footer look more clickable when rollover it */
+a:hover {
+  color: #eaf6f6;
+}
+
+hr {
+  /* If write only border --> it will have 2 line after styling
+  To avoid this, we only style border-top or we could use that way above but set border-bottom to none */
+  border-top: dotted rgb(254, 211, 211) 5px; /* could follow any orders (e.g: 5px dotted #color) */ 
+  width: 2.5rem; /* use dynamic size here so that it can scale when website scales */
+  margin: 6.25rem auto;
 }
 
 .top-container {
-    background-color: #FFF6EA;
-    width: 200em;
-
-    /* Challenge in Video 44:
+  background-color: #fff6ea;
+  /* Challenge in Video 44:
         border: solid;
         border-width: 10px;
         padding: 20px;
     */
-
+  position: relative;
+  padding-top: 100px;
 }
 
 .middle-container {
-    background-color: #B4FF9F;
-    height : 200px;
-    width : 200px;
+  /* Challenge in Video:
+        background-color: #B4FF9F;
+        height : 200px;
+        width : 200px; 
+  */
 
-    /* Challenge in Video 44:
+  /* Challenge in Video 44:
         border: solid;
         border-width: 20px;
         margin-left: 260px;
-    */
+  */
+
+  margin: 100px 0;
 }
 
-.bottom-container {
-    background-color: #F9FFA4;
-    height : 200px;
+/* Should not use this to style img in middle container as it's complicated to expand later or could cause errors
+.middle-container .profile img {
     width : 200px;
+} 
+*/
 
-    /* Challenge in Video 44:
+.bottom-container {
+  /* Challenge in Video:
+        background-color: #F9FFA4;
+        height : 200px;
+        width : 200px; 
+    */
+
+  /* Challenge in Video 44:
         border: solid;
         border-width: 10px;
         margin-left: 500px;
     */
 
+  background-color: #66bfbf;
+  margin-top: 100px;
+  padding: 40px 0 20px;
 }
+
+.top-cloud {
+  position: absolute; /* absolute compared with parent block which is top-container */
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute; /* absolute compared with parent block which is top-container */
+  left: 250px;
+  bottom: 300px;
+}
+
+.profile-img {
+  width: 200px;
+}
+
+.profile-intro {
+  width: 30%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left; /* This will override text-aligned center in body */
+  /* don't need anymore as styling paragraph will affect all paragraphs on the page
+      line-height: 2; */
+}
+
+.research-img {
+  width: 25%;
+  float: left; /* make text-wrap around img */
+  margin-right: 30px;
+}
+
+.blogging-img {
+  width: 25%;
+  float: right; /* make text-wrap around img */
+  margin-left: 30px;
+}
+
+/* For Lesson 58 - Float & Clear: clear example
+    .research-skill-description {
+    make sure left margin of the skill description is clear & wrapped around anything, 
+    then basically prevents it from carrying out the default
+    clear: left; 
+} 
+
+    .singing-skill-description{
+    make sure right margin of the skill description is clear & wrapped around anything, 
+    then basically prevents it from carrying out the default
+    clear: right; 
+} */
 
 .span-pro {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 8px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+#name {
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem; /* should not use em as it'll be affected by body's font size */
+}
+
+#contact-message {
+  width: 30%;
+  margin: 50px auto 70px; /* Angela: top = 40, bot = 60 */
+}
+
+#footer-copyright {
+  font-size: 0.75rem;
+  color: #eaf6f6;
+  /* could use margin 
+    margin-top: 40px;
+  */
+  padding: 20px 0;
+}
